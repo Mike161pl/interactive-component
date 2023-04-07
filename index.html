@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__bg"></div>
+    <div class="header__text">
+      <h1 class="header__text--title">Simple, traffic-based pricing</h1>
+      <p class="header__text--info">Sign-up for our 30-day trial. No credit card required. </p>
+    </div>
+  </header>
+  <main class="card">
+    <section class="card__price">
+      <div class="card__price--view">
+        <p class="card__price--pageview">
+          <span typ="number" id="rageview" >100 k</span> Pageviews
+        </p>
+        <p class="card__price--showcost">
+          <span class="card__price--showcost-active" type="number" id="rangevalue">$16</span>/month
+        </p>
+        <div class="card__price--slide">
+          <input type="range" value="100" min="0" max="200" id="range" />
+        </div>
+      </div>
+      <div class="card__price--changer">
+        <span class="card__price--monthly">Monthly Billing</span>
+        <label class="card__price--switch" for="switch">
+          <input type="checkbox" id="switch" value="yes">
+          <span class="card__price--slider"></span>
+        </label>
+        <span class="card__price--yearly">Yearly Billing <span class="card__price--special"></span></span>
+      </div>
+    </section>
+    <hr>
+    <section class="card__info">
+      <ul>
+        <li class="card__info--text"><img src="./images/icon-check.svg" alt=""> Unlimited websites</li>
+        <li class="card__info--text"><img src="./images/icon-check.svg" alt="">100% data ownership</li>
+        <li class="card__info--text"><img src="./images/icon-check.svg" alt=""> Email reports</li>
+      </ul>
+      <button class="card__info--btn">Start my trial</button>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
