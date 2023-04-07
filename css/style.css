@@ -53,7 +53,7 @@ ul {
           transform: translate(-40%);
   width: 50%;
   color: black;
-  background-image: url("/images/pattern-circles.svg");
+  background-image: url("./images/pattern-circles.svg");
   background-repeat: no-repeat;
 }
 
@@ -183,7 +183,7 @@ ul {
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
   position: relative;
-  background-image: url("/images/icon-slider.svg");
+  background-image: url("./images/icon-slider.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
